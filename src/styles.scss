@@ -258,9 +258,9 @@ body {
 
 .testimonials-cards__row{
   display: flex;
-  justify-content: center;
-  gap:45px;
-  padding-bottom:45px;
+  justify-content: space-around;
+  margin-bottom:45px;
+  padding:0
 }
 
 .testimonials-header__content{
@@ -279,8 +279,8 @@ body {
 }
 
 .testimonials-cards__content {
-  max-width: 577px;
-  max-height: 233px;
+  width: 577px;
+
   border-radius: 40px;
   border: 1px solid #6CB981;
   background: #FFF;
@@ -315,8 +315,104 @@ body {
 
 .testimonials-cards-author-text__text{
   color: #0D4C14;
-  font-size: 13px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
 
+}
+
+//Footer section 
+
+.footer-content__container{
+  display: flex;
+  justify-content: center;
+
+}
+
+.footer-header__content{
+  display: flex;
+  justify-content: center;
+  padding:50px 0 70px 0;
+}
+
+.footer-header__title {
+  color: var(--Gray-3, #828282);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+
+
+.footer__content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 374px;
+  padding-bottom:50px;  
+  float:right;
+  margin-right: 100px;
+}
+
+.footer__rectangle{
+  width: 374px;
+  height: 56px;
+  margin-bottom:14px;
+
+  border-radius: 61px;
+  background: #9FDEA9;
+}
+
+.footer__rectangle-second {
+  border-radius: 61px;
+  border: 3px solid #4DB96B;
+  width: 168px;
+  height: 56px;
+
+}
+
+.footer-contactus__container{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+
+}
+
+
+
+.footer-contactus__content{
+  display: flex;
+
+}
+
+.footer-contactus__content:not(:last-child){
+  margin-bottom: 30px;
+}
+
+.footer-contactus__text-email, .footer-contactus__text-phone, .footer-contactus__text-adress{
+  color: var(--Gray-1, #333);
+  font-family: TT Hoves;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  padding-left:20px;
+  margin:0;
+  align-items: center;
+  display: flex;
+
+}
+
+.footer-blank__container {
+  height: 145px;
+  background: #324B29;
+}
+
+footer-blank__container{
+  width:1903px;
 }
